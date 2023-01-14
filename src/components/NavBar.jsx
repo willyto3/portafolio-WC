@@ -14,23 +14,43 @@ const NavBar = () => {
   return (
     <Wrapper>
       <div className={!menuIcono ? 'nav-bar' : 'nav-bar active'}>
-        <NavLink className='nav-bar__link' to='/'>
+        <NavLink
+          className='nav-bar__link'
+          to='/'
+          onClick={() => setMenuIcono(false)}
+        >
           INICIO
         </NavLink>
 
-        <NavLink className='nav-bar__link' to='experiencia'>
+        <NavLink
+          className='nav-bar__link'
+          to='experiencia'
+          onClick={() => setMenuIcono(false)}
+        >
           EXPERIENCIA
         </NavLink>
 
-        <NavLink className='nav-bar__link' to='estudios'>
+        <NavLink
+          className='nav-bar__link'
+          to='estudios'
+          onClick={() => setMenuIcono(false)}
+        >
           ESTUDIOS
         </NavLink>
 
-        <NavLink className='nav-bar__link' to='proyectos'>
+        <NavLink
+          className='nav-bar__link'
+          to='proyectos'
+          onClick={() => setMenuIcono(false)}
+        >
           PROYECTOS
         </NavLink>
 
-        <NavLink className='nav-bar__link' to='contacto'>
+        <NavLink
+          className='nav-bar__link'
+          to='contacto'
+          onClick={() => setMenuIcono(false)}
+        >
           CONTACTO
         </NavLink>
         <div className='animation start-home'></div>
@@ -92,23 +112,28 @@ const Wrapper = styled.div`
   }
 
   .start-home,
-  nav-bar__link:nth-child(1):hover ~ .animation {
+  .nav-bar__link:nth-child(1):hover ~ .animation,
+  .active:nth-child(1) ~ .animation {
     width: 16rem;
     left: 0;
   }
 
-  .nav-bar__link:nth-child(2):hover ~ .animation {
+  .nav-bar__link:nth-child(2):hover ~ .animation,
+  .active:nth-child(2) ~ .animation {
     left: 16rem;
   }
 
-  .nav-bar__link:nth-child(3):hover ~ .animation {
+  .nav-bar__link:nth-child(3):hover ~ .animation,
+  .active:nth-child(3) ~ .animation {
     left: 32rem;
   }
 
-  .nav-bar__link:nth-child(4):hover ~ .animation {
+  .nav-bar__link:nth-child(4):hover ~ .animation,
+  .active:nth-child(4) ~ .animation {
     left: 48rem;
   }
-  .nav-bar__link:nth-child(5):hover ~ .animation {
+  .nav-bar__link:nth-child(5):hover ~ .animation,
+  .active:nth-child(5) ~ .animation {
     left: 64rem;
   }
 
@@ -133,22 +158,27 @@ const Wrapper = styled.div`
     }
 
     .start-home,
-    nav-bar__link:nth-child(1):hover ~ .animation {
+    .nav-bar__link:nth-child(1):hover ~ .animation,
+    .active:nth-child(1) ~ .animation {
       width: 10rem;
     }
 
-    .nav-bar__link:nth-child(2):hover ~ .animation {
+    .nav-bar__link:nth-child(2):hover ~ .animation,
+    .active:nth-child(2) ~ .animation {
       left: 10rem;
     }
 
-    .nav-bar__link:nth-child(3):hover ~ .animation {
+    .nav-bar__link:nth-child(3):hover ~ .animation,
+    .active:nth-child(3) ~ .animation {
       left: 20rem;
     }
 
-    .nav-bar__link:nth-child(4):hover ~ .animation {
+    .nav-bar__link:nth-child(4):hover ~ .animation,
+    .active:nth-child(4) ~ .animation {
       left: 30rem;
     }
-    .nav-bar__link:nth-child(5):hover ~ .animation {
+    .nav-bar__link:nth-child(5):hover ~ .animation,
+    .active:nth-child(5) ~ .animation {
       left: 40rem;
     }
   }
@@ -162,7 +192,7 @@ const Wrapper = styled.div`
       top: 10rem;
       width: 16rem;
       height: 40rem;
-      text-align:center;
+      text-align: center;
 
       &.active {
         transform: translateX(-10%);
@@ -186,29 +216,34 @@ const Wrapper = styled.div`
     }
 
     .start-home,
-    nav-bar__link:nth-child(1):hover ~ .animation {
+    .nav-bar__link:nth-child(1):hover ~ .animation,
+    .active:nth-child(1) ~ .animation {
       width: 16rem;
       top: 0rem;
-      left:0;
+      left: 0;
     }
 
-    .nav-bar__link:nth-child(2):hover ~ .animation {
+    .nav-bar__link:nth-child(2):hover ~ .animation,
+    .active:nth-child(2) ~ .animation {
       top: 8rem;
-      left:0;
+      left: 0;
     }
 
-    .nav-bar__link:nth-child(3):hover ~ .animation {
+    .nav-bar__link:nth-child(3):hover ~ .animation,
+    .active:nth-child(3) ~ .animation {
       top: 16rem;
-      left:0;
+      left: 0;
     }
 
-    .nav-bar__link:nth-child(4):hover ~ .animation {
+    .nav-bar__link:nth-child(4):hover ~ .animation,
+    .active:nth-child(4) ~ .animation {
       top: 24rem;
-      left:0;
+      left: 0;
     }
-    .nav-bar__link:nth-child(5):hover ~ .animation {
+    .nav-bar__link:nth-child(5):hover ~ .animation,
+    .active:nth-child(5) ~ .animation {
       top: 32rem;
-      left:0;
+      left: 0;
     }
   }
 `
