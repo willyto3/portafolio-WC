@@ -79,6 +79,9 @@ const Wrapper = styled.div`
   justify-content: flex-end;
   width: 90%;
   height: 100%;
+  .caja {
+    background-color: transparent;
+  }
 
   .nav-bar {
     position: relative;
@@ -152,7 +155,7 @@ const Wrapper = styled.div`
     }
 
     .nav-bar__link {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 6rem;
       width: 10rem;
     }
@@ -186,7 +189,6 @@ const Wrapper = styled.div`
   /* MOVILES */
   @media (max-width: ${({ theme }) => theme.media.movil}) {
     .nav-bar {
-      width: 55vw;
       transform: translateX(200%);
       transition: all 1s linear;
       top: 10rem;

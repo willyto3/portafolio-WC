@@ -16,4 +16,9 @@ html {
   overflow-x: hidden;
 }
 
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
 `
