@@ -29,11 +29,10 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  background-color: beige;
-  min-height: 90vh;
+  min-height: 70vh;
 
   .inicio__caja {
-    height: 5rem;
+    height: 6rem;
     overflow: hidden;
   }
   .inicio__titulo {
@@ -43,20 +42,20 @@ const Wrapper = styled.section`
 
   @keyframes move {
     33% {
-      transform: translateY(-5rem);
+      transform: translateY(-6rem);
     }
     66% {
-      transform: translateY(-10rem);
+      transform: translateY(-12rem);
     }
     100% {
-      transform: translateY(-15rem);
+      transform: translateY(-18rem);
     }
   }
 
   .inicio__profesion {
     display: flex;
     align-items: center;
-    height: 5rem;
+    line-height: 6rem;
     font-size: 4rem;
   }
 `

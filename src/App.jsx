@@ -14,6 +14,7 @@ import Proyectos from './pages/Proyectos'
 import Error404 from './pages/Error404'
 // Importacion de los componentes
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/proyectos' element={<Proyectos />} />
           <Route path='*' element={<Error404 />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   )

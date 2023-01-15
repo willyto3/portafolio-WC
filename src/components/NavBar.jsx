@@ -102,6 +102,7 @@ const Wrapper = styled.div`
     text-align: center;
     z-index: 1;
     width: 16rem;
+    font-weight:500;
   }
 
   .animation {

@@ -1,4 +1,12 @@
+import styled from 'styled-components'
+
 const Proyectos = () => {
-  return <div>Proyectos</div>
+  return (
+    <Wrapper className='container'>
+      <h1>Proyectos</h1>
+    </Wrapper>
+  )
 }
 export default Proyectos
+
+const Wrapper = styled.section``

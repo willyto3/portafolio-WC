@@ -7,7 +7,8 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family:Montserrat, sans-serif;
+  font-weight:400;
 }
 
 /* implementamos que 1rem sea igual a 10px y ocultamos la barra de navegacion en el eje x */
@@ -16,9 +17,19 @@ html {
   overflow-x: hidden;
 }
 
+h1{
+  font-family: Merriweather, "Work Sans", sans-serif;
+  font-size:9rem;
+  font-style:italic;
+}
+h2{
+  font-size:4rem;
+}
 .container {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
 }
+
+
 
 `
