@@ -26,7 +26,7 @@ h2{
   font-size:4rem;
 }
 .container {
-  max-width: 130rem;
+  max-width: 145rem;
   margin: 0 auto;
 }
 

@@ -54,6 +54,7 @@ const NavBar = () => {
           CONTACTO
         </NavLink>
         <div className='animation start-home'></div>
+
       </div>
 
       {/* Botones de apertura y cierre para moviles */}
@@ -79,9 +80,6 @@ const Wrapper = styled.div`
   justify-content: flex-end;
   width: 90%;
   height: 100%;
-  .caja {
-    background-color: transparent;
-  }
 
   .nav-bar {
     position: relative;
@@ -102,7 +100,7 @@ const Wrapper = styled.div`
     text-align: center;
     z-index: 1;
     width: 16rem;
-    font-weight:500;
+    font-weight: 500;
   }
 
   .animation {
@@ -111,6 +109,7 @@ const Wrapper = styled.div`
     top: 0;
     z-index: 0;
     background: #8490ff;
+    opacity: 0.2;
     border-radius: 0.8rem;
     transition: all 0.5s ease 0s;
   }
