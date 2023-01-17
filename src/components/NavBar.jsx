@@ -189,6 +189,7 @@ const Wrapper = styled.div`
   /* MOVILES */
   @media (max-width: ${({ theme }) => theme.media.movil}) {
     .nav-bar {
+      visibility:hidden;
       transform: translateX(200%);
       transition: all 1s linear;
       top: 10rem;
