@@ -13,7 +13,6 @@ const Header = () => {
         <img src='logo.png' alt='Logo' />
       </NavLink>
       <NavBar />
-      <button>Descargar CV</button>
       <WhatsApp />
     </Wrapper>
   )

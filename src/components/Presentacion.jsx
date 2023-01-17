@@ -1,5 +1,5 @@
 // Importacion de Styled del Styled-Components
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const Presentacion = () => {
   return (
@@ -20,6 +20,13 @@ const Presentacion = () => {
             <div className='inicio__profesion'>Experto en Excel - VBA</div>
           </div>
         </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste
+          facere quia nam esse necessitatibus placeat minus dignissimos
+          molestiae repudiandae rem voluptatum maiores officiis modi,
+          repellendus accusantium tempore corrupti dolore.
+        </p>
+        <button>Descargar CV</button>
       </div>
     </Wrapper>
   )
@@ -33,6 +40,7 @@ const Wrapper = styled.section`
   align-items: center;
   margin-top: 1rem;
   min-height: 50vh;
+  width:50%;
 
   .inicio__caja {
     height: 6rem;
@@ -64,4 +72,3 @@ const Wrapper = styled.section`
     font-size: 4rem;
   }
 `
-

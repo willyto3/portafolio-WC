@@ -198,6 +198,7 @@ const Wrapper = styled.div`
       text-align: center;
 
       &.active {
+        visibility: visible;
         transform: translateX(-10%);
         z-index: 999;
         transform-origin: right;
