@@ -6,12 +6,6 @@ const Habilidades = () => {
     <Grilla>
       <Card />
       <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
     </Grilla>
   )
 }
