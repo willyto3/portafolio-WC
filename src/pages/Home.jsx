@@ -2,17 +2,16 @@
 import styled from 'styled-components'
 // Importacion de Componentes
 import Presentacion from '../components/Presentacion'
-import Habilidades from '../components/Habilidades'
 
 const Home = () => {
   return (
     <Wrapper className='container'>
-      <div className='container__columna1'>
+      <div className='container__columna container__columna--amplio'>
         <Presentacion />
       </div>
 
       <div className='container__columna'>
-        <Habilidades />
+        <img src="willyBlanco.jpg" alt="" />
       </div>
     </Wrapper>
   )
@@ -22,12 +21,16 @@ export default Home
 const Wrapper = styled.section`
   display: flex;
   justify-content:space-between;
+  align-items:center;
   margin-top: 2rem;
 
-  .container__columna1 {
-    width: 80%;
-  }
   .container__columna {
-    width: 20%;
+    width: 40%;
+  }
+  .container__columna--amplio {
+    width: 60%;
+  }
+  img{
+    height:70rem;
   }
 `

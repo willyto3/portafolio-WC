@@ -13,9 +13,6 @@ const Habilidades = () => {
         <Card titulo='JavaScript' imagen='js.png' />
         <Card titulo='React' imagen='atom.png' />
         <Card titulo='HTML' imagen='html-5.png' />
-        <Card titulo='CSS' imagen='css-3.png' />
-        <Card titulo='JavaScript' imagen='js.png' />
-        <Card titulo='React' imagen='atom.png' />
       </div>
     </Grilla>
   )
@@ -29,7 +26,6 @@ const Grilla = styled.div`
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  transition: 0.5s;
 
   .grilla {
     display: flex;
@@ -37,6 +33,5 @@ const Grilla = styled.div`
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    transition: 0.5s;
   }
 `
