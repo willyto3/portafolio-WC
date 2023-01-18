@@ -1,20 +1,20 @@
 // Importamos Styled de styled-components
 import styled from 'styled-components'
 
-const Card = () => {
+const Card = ({ titulo, imagen }) => {
   return (
     <Caja>
       <div className='box'>
         <div className='box__circulo'></div>
-        <img className='box__imagen' src='git.png' alt='Foto' />
+        <img className='box__imagen' src={imagen} alt='Foto' />
         <div className='box__contenido'>
-          <h2 className='box__titulo'>Pepsi Cola</h2>
+          <h2 className='box__titulo'>{titulo}</h2>
           <p className='box__parrafo'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-            commodi laboriosam odio perspiciatis esse, aperiam, ad corporis
-            nesciunt aliquam eum. Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Nihil commodi laboriosam odio perspiciatis esse,
-            aperiam, ad corporis nesciunt aliquam eum.
+            commodi laboriosam odio perspiciatis esse, ad corporis nesciunt
+            aliquam eum. Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Nihil commodi laboriosam odio perspiciatis esse, ad corporis
+            nesciunt aliquam eum.
           </p>
         </div>
       </div>
@@ -69,14 +69,14 @@ const Caja = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 23rem;
+    height: 11rem;
     pointer-events: none;
     transition: 0.5s;
   }
 
   .box:hover .box__imagen {
     left: 72%;
-    height: 35rem;
+    height: 19rem;
   }
 
   .box__contenido {

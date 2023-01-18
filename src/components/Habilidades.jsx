@@ -4,8 +4,8 @@ import Card from './Card'
 const Habilidades = () => {
   return (
     <Grilla>
-      <Card />
-      <Card />
+      <Card titulo='Git Hub' imagen='github.png'/>
+      <Card titulo='Excel' imagen='excel.png'/>
     </Grilla>
   )
 }

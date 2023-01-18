@@ -22,7 +22,4 @@ const Wrapper = styled.section`
   align-items: center;
   margin-top: 2rem;
 
-  .presentacion {
-    border: 0.5rem dotted blue;
-  }
 `
