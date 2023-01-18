@@ -55,7 +55,6 @@ const Caja = styled.div`
       left: 0;
       width: 100%;
       height: 100%;
-      background: red;
       clip-path: circle(7rem at center);
       transition: 0.5s;
     }
