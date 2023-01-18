@@ -12,9 +12,7 @@ const Card = ({ titulo, imagen }) => {
           <p className='box__parrafo'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
             commodi laboriosam odio perspiciatis esse, ad corporis nesciunt
-            aliquam eum. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Nihil commodi laboriosam odio perspiciatis esse, ad corporis
-            nesciunt aliquam eum.
+            aliquam eum.
           </p>
         </div>
       </div>
@@ -27,7 +25,7 @@ const Caja = styled.div`
   .box {
     position: relative;
     width: 20rem;
-    height: 15rem;
+    height: 12rem;
     display: flex;
     align-items: center;
     border-radius: 2rem;
@@ -69,7 +67,7 @@ const Caja = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 11rem;
+    height: 10rem;
     pointer-events: none;
     transition: 0.5s;
   }
@@ -86,7 +84,7 @@ const Caja = styled.div`
     justify-content: flex-start;
     width: 50%;
     left: 20%;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
@@ -101,7 +99,7 @@ const Caja = styled.div`
   .box__titulo {
     color: white;
     text-transform: uppercase;
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     line-height: 5rem;
   }
 
@@ -129,7 +127,7 @@ const Caja = styled.div`
     .box__contenido {
       width: 100%;
       left: 0;
-      padding: 1rem;
+      padding: 0.5rem;
     }
   }
 `

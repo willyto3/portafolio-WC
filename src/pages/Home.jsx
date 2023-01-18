@@ -7,8 +7,11 @@ import Habilidades from '../components/Habilidades'
 const Home = () => {
   return (
     <Wrapper className='container'>
-      <Presentacion />
-      <div className='presentacion'>
+      <div className='container__columna1'>
+        <Presentacion />
+      </div>
+
+      <div className='container__columna'>
         <Habilidades />
       </div>
     </Wrapper>
@@ -18,8 +21,13 @@ export default Home
 
 const Wrapper = styled.section`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:space-between;
   margin-top: 2rem;
 
+  .container__columna1 {
+    width: 80%;
+  }
+  .container__columna {
+    width: 20%;
+  }
 `
