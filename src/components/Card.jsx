@@ -3,49 +3,49 @@ import styled from 'styled-components'
 
 const Card = () => {
   return (
-    <Tarjeta>
-      <div className='tarjeta'>
-        <div className='tarjeta__circulo'></div>
-        <img className='tarjeta__imagen' src='git.png' alt='' />
-        <div className='tarjeta__contenido'>
-          <h2>Git Hub</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            consectetur explicabo, nostrum tempora vero blanditiis odio dolores
-            quisquam ipsam, officiis temporibus nulla distinctio veritatis eaque
-            qui inventore, facere atque animi!
+    <Caja>
+      <div className='box'>
+        <div className='box__circulo'></div>
+        <img className='box__imagen' src='git.png' alt='Foto' />
+        <div className='box__contenido'>
+          <h2 className='box__titulo'>Pepsi Cola</h2>
+          <p className='box__parrafo'>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
+            commodi laboriosam odio perspiciatis esse, aperiam, ad corporis
+            nesciunt aliquam eum. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Nihil commodi laboriosam odio perspiciatis esse,
+            aperiam, ad corporis nesciunt aliquam eum.
           </p>
         </div>
       </div>
-    </Tarjeta>
+    </Caja>
   )
 }
 export default Card
 
-const Tarjeta = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 50vh;
-
-  .tarjeta {
+const Caja = styled.div`
+  .box {
     position: relative;
+    width: 20rem;
+    height: 15rem;
     display: flex;
     align-items: center;
-    width: 60rem;
-    height: 35rem;
     border-radius: 2rem;
     transition: 0.5s;
 
-    
+    &:hover {
+      width: 40rem;
+      height: 25rem;
+    }
   }
 
-  .tarjeta__circulo {
+  .box__circulo {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     overflow: hidden;
 
     &::before {
@@ -53,46 +53,84 @@ const Tarjeta = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      height: 100%;
       width: 100%;
-      background: #3a80c2;
-      clip-path: circle(12rem at center);
+      height: 100%;
+      background: red;
+      clip-path: circle(7rem at center);
       transition: 0.5s;
     }
-
-    &:hover:before {
-      clip-path: circle(40rem at center);
-      background: white;
-      border-radius: 2rem;
-    }
-
-    &:hover ~ .tarjeta__imagen {
-      left: 72%;
-      height: 50rem;
-    }
-    &:hover ~ .tarjeta__contenido {
-      left: 0;
-      opacity: 1;
-      visibility: visible;
-    }
   }
-  .tarjeta__imagen {
+
+  .box:hover .box__circulo::before {
+    background: #0065c3;
+    clip-path: circle(25rem at center);
+  }
+  .box__imagen {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 30rem;
+    height: 23rem;
     pointer-events: none;
     transition: 0.5s;
   }
 
-  .tarjeta__contenido {
+  .box:hover .box__imagen {
+    left: 72%;
+    height: 35rem;
+  }
+
+  .box__contenido {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 50%;
     left: 20%;
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 1rem 1rem 1rem 2rem;
     transition: 0.5s;
     opacity: 0;
     visibility: hidden;
+  }
+
+  .box:hover .box__contenido {
+    left: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .box__titulo {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    line-height: 5rem;
+  }
+
+  .box__parrafo {
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    .box {
+      width: auto;
+      max-width: 45rem;
+      align-items: flex-start;
+
+      &:hover {
+        height: 30rem;
+
+        .box__imagen {
+          top: 70%;
+          left: 50%;
+          height: 32rem;
+        }
+      }
+    }
+
+    .box__contenido {
+      width: 100%;
+      left: 0;
+      padding: 1rem;
+    }
   }
 `

@@ -39,8 +39,7 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  min-height: 50vh;
-  width:50%;
+  width: 50%;
 
   .inicio__caja {
     height: 6rem;
