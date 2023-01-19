@@ -22,11 +22,10 @@ const Presentacion = () => {
         </div>
         <p>
           Soy una persona responsable, genero soluciones creativas a los
-          problemas que se me presentan en mi entorno, con iniciativa,
-          honestidad y puntualidad, asumo con agrado los retos y metas que su
-          organización pudiera plantear, facilidad para trabajar en equipo, con
-          buen manejo de relaciones interpersonales, autodidacta, facilidad y
-          disposición para aprender y para adaptarme a los cambios.
+          problemas, con iniciativa,honestidad y puntualidad, asumo con agrado
+          los retos y metas que su organización pudiera plantear, facilidad para
+          trabajar en equipo, autodidacta, disposición para aprender y me adapto rapidamente a
+          los cambios.
         </p>
         <button>Descargar CV</button>
       </div>
@@ -45,7 +44,7 @@ const Wrapper = styled.section`
   .inicio__caja {
     height: 8rem;
     overflow: hidden;
-    margin: 2rem 0 2rem 0;
+    margin: 1rem 0 1.5rem 0;
   }
   .inicio__titulo {
     height: 100%;
@@ -71,5 +70,13 @@ const Wrapper = styled.section`
     align-items: center;
     line-height: 8rem;
     font-size: 6rem;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.movil}) {
+    .inicio__profesion {
+    font-size: 5.2rem;
+    width:100%
+  }
+    
   }
 `

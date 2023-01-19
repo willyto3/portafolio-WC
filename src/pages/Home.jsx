@@ -37,12 +37,12 @@ const Wrapper = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     .container__columna {
       width: 90%;
     }
     img {
-      display:flex;
+      display: flex;
     }
   }
 `
