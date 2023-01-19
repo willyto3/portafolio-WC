@@ -15,6 +15,24 @@ export const GlobalStyle = createGlobalStyle`
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+
+  @media (max-width: ${({ theme }) => theme.media.medium}) {
+    font-size: 50%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small}) {
+    font-size: 40%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.tablet}) {
+    font-size: 35%;
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.smalltablet}) {
+    font-size: 25%;
+  }
+
+  
 }
 
 h1{
@@ -23,11 +41,19 @@ h1{
   font-style:italic;
 }
 h2{
+  font-size:5rem;
+}
+h3{
   font-size:4rem;
 }
+
+p{
+  font-size:3rem;
+  text-align:justify;
+}
 .container {
-  max-width: 160rem;
-  padding-top:4rem;
+  max-width: 180rem;
+  padding-top:1rem;
   margin: 0 auto;
 }
 

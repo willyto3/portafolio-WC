@@ -13,8 +13,8 @@ export default WhatsApp
 
 const Icon = styled.div`
   position:absolute;
-  bottom:14rem;
-  right:8rem;
-  font-size: 7rem;
+  bottom:0;
+  right:2rem;
+  font-size: 8rem;
   color:#25D366;
 `

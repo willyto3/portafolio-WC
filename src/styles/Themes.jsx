@@ -16,7 +16,10 @@ export const theme = {
     shadowSupport: 'rgba(0,0,0,0.16) 0px 1px 4px',
   },
   media: {
-    movil: '600px',
-    tablet: '960px',
+    movil: '480px',
+    smalltablet: '650px',
+    tablet: '996px',
+    small: '1200px',
+    medium: '1440px',
   },
 }

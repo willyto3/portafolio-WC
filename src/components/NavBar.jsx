@@ -54,7 +54,6 @@ const NavBar = () => {
           CONTACTO
         </NavLink>
         <div className='animation start-home'></div>
-
       </div>
 
       {/* Botones de apertura y cierre para moviles */}
@@ -147,49 +146,10 @@ const Wrapper = styled.div`
     font-size: 7rem;
   }
 
-  /* TABLETS */
-  @media (max-width: ${({ theme }) => theme.media.tablet}) {
-    .nav-bar {
-      width: 50rem;
-      height: 6rem;
-    }
-
-    .nav-bar__link {
-      font-size: 1.4rem;
-      line-height: 6rem;
-      width: 10rem;
-    }
-
-    .start-home,
-    .nav-bar__link:nth-child(1):hover ~ .animation,
-    .active:nth-child(1) ~ .animation {
-      width: 10rem;
-    }
-
-    .nav-bar__link:nth-child(2):hover ~ .animation,
-    .active:nth-child(2) ~ .animation {
-      left: 10rem;
-    }
-
-    .nav-bar__link:nth-child(3):hover ~ .animation,
-    .active:nth-child(3) ~ .animation {
-      left: 20rem;
-    }
-
-    .nav-bar__link:nth-child(4):hover ~ .animation,
-    .active:nth-child(4) ~ .animation {
-      left: 30rem;
-    }
-    .nav-bar__link:nth-child(5):hover ~ .animation,
-    .active:nth-child(5) ~ .animation {
-      left: 40rem;
-    }
-  }
-
   /* MOVILES */
   @media (max-width: ${({ theme }) => theme.media.movil}) {
     .nav-bar {
-      visibility:hidden;
+      visibility: hidden;
       transform: translateX(200%);
       transition: all 1s linear;
       top: 10rem;

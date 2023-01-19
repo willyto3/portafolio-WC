@@ -16,15 +16,17 @@ const Presentacion = () => {
             <div className='inicio__profesion'>
               Especialista NTC ISO 17025:2017
             </div>
-            <div className='inicio__profesion'>Web Developer</div>
+            <div className='inicio__profesion'>Desarrollador Web</div>
             <div className='inicio__profesion'>Experto en Excel - VBA</div>
           </div>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste
-          facere quia nam esse necessitatibus placeat minus dignissimos
-          molestiae repudiandae rem voluptatum maiores officiis modi,
-          repellendus accusantium tempore corrupti dolore.
+          Soy una persona responsable, genero soluciones creativas a los
+          problemas que se me presentan en mi entorno, con iniciativa,
+          honestidad y puntualidad, asumo con agrado los retos y metas que su
+          organización pudiera plantear, facilidad para trabajar en equipo, con
+          buen manejo de relaciones interpersonales, autodidacta, facilidad y
+          disposición para aprender y para adaptarme a los cambios.
         </p>
         <button>Descargar CV</button>
       </div>
@@ -38,11 +40,12 @@ const Wrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin: 2rem;
 
   .inicio__caja {
-    height: 6rem;
+    height: 8rem;
     overflow: hidden;
+    margin: 2rem 0 2rem 0;
   }
   .inicio__titulo {
     height: 100%;
@@ -51,22 +54,22 @@ const Wrapper = styled.section`
 
   @keyframes move {
     25% {
-      transform: translateY(-6rem);
+      transform: translateY(-8rem);
     }
     50% {
-      transform: translateY(-12rem);
+      transform: translateY(-16rem);
     }
     75% {
-      transform: translateY(-18rem);
+      transform: translateY(-24rem);
     }
     100% {
-      transform: translateY(-24rem);
+      transform: translateY(-32rem);
     }
   }
 
   .inicio__profesion {
     align-items: center;
-    line-height: 6rem;
-    font-size: 4rem;
+    line-height: 8rem;
+    font-size: 6rem;
   }
 `
