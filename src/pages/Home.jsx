@@ -6,11 +6,13 @@ import Presentacion from '../components/Presentacion'
 const Home = () => {
   return (
     <Wrapper className='container'>
-      <div className='container__columna'>
-        <img src='willyBlanco.jpg' alt='' />
-      </div>
-      <div className='container__columna container__columna--amplio'>
-        <Presentacion />
+      <div className='box'>
+        <div className='box__columna'>
+          <img src='willyBlanco.jpg' alt='' />
+        </div>
+        <div className='box__columna box__columna--amplio'>
+          <Presentacion />
+        </div>
       </div>
     </Wrapper>
   )
@@ -23,10 +25,10 @@ const Wrapper = styled.section`
   align-items: center;
   margin-top: 1.5rem;
 
-  .container__columna {
+  .box__columna {
     width: 30%;
   }
-  .container__columna--amplio {
+  .box__columna--amplio {
     width: 70%;
   }
   img {
@@ -38,8 +40,11 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
 
-    .container__columna {
+    .box__columna {
       width: 90%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
     }
     img {
       display: flex;
