@@ -32,4 +32,17 @@ const Wrapper = styled.section`
   img {
     height: 70rem;
   }
+
+  @media (max-width: ${({ theme }) => theme.media.movil}) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .container__columna {
+      width: 90%;
+    }
+    img {
+      display:flex;
+    }
+  }
 `

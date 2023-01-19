@@ -31,8 +31,6 @@ html {
   @media (max-width: ${({ theme }) => theme.media.smalltablet}) {
     font-size: 25%;
   }
-
-  
 }
 
 h1{
@@ -56,7 +54,4 @@ p{
   padding-top:1rem;
   margin: 0 auto;
 }
-
-
-
 `
