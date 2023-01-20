@@ -32,10 +32,6 @@ const Wrapper = styled.section`
     @media (max-width: ${({ theme }) => theme.media.tablet}),
       (max-width: ${({ theme }) => theme.media.movil}) {
       grid-template-columns: 1fr;
-
-      img{
-        width: 30rem;
-      }
     }
   }
 `

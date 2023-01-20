@@ -59,7 +59,7 @@ p{
 @media (max-width: ${({ theme }) => theme.media.tablet}) {
 
   html {
-  font-size: 54%;
+  font-size: 52%;
 }
   .grid-2-columnas, .grid-3-columnas{
     grid-template-columns:1fr;
@@ -69,7 +69,7 @@ p{
 @media (max-width: ${({ theme }) => theme.media.movil}) {
 
 html {
-font-size: 40%;
+font-size: 34%;
 }
 .grid-2-columnas, .grid-3-columnas{
   grid-template-columns:1fr;
