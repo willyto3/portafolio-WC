@@ -6,11 +6,11 @@ import Presentacion from '../components/Presentacion'
 const Home = () => {
   return (
     <Wrapper className='container'>
-      <div className='box'>
+      <div className='box grid grid-2-columnas'>
         <div className='box__columna'>
-          <img src='willyBlanco.jpg' alt='' />
+          <img src='willyBlanco.jpg' alt='Foto Perfil' />
         </div>
-        <div className='box__columna box__columna--amplio'>
+        <div className='box__columna'>
           <Presentacion />
         </div>
       </div>
@@ -20,34 +20,14 @@ const Home = () => {
 export default Home
 
 const Wrapper = styled.section`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 1.5rem;
-
-  .box__columna {
-    width: 30%;
-  }
-  .box__columna--amplio {
-    width: 70%;
-  }
-  img {
-    height: 70rem;
+  img{
+    width:40rem;
   }
 
-  @media (max-width: ${({ theme }) => theme.media.movil}) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .box__columna {
-      width: 90%;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-    }
-    img {
-      display: flex;
-    }
+  .box{
+    grid-template-columns:1fr 2fr;
+    align-items:center;
+    justify-items:center;
+    
   }
 `
