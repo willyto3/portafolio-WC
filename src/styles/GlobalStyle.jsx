@@ -22,9 +22,11 @@ h1{
   font-size:8rem;
   font-style:italic;
 }
+
 h2{
   font-size:4rem;
 }
+
 h3{
   font-size:3rem;
 }
@@ -35,7 +37,8 @@ p{
 }
 
 .container {
-  max-width: 180rem;
+  max-width: 170rem;
+  width:90%;
   padding-top:1rem;
   margin: 0 auto;
 }
@@ -51,5 +54,25 @@ p{
 
 .grid-3-columnas{
   grid-template-columns:repeat(3, 1fr);
+}
+
+@media (max-width: ${({ theme }) => theme.media.tablet}) {
+
+  html {
+  font-size: 54%;
+}
+  .grid-2-columnas, .grid-3-columnas{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: ${({ theme }) => theme.media.movil}) {
+
+html {
+font-size: 40%;
+}
+.grid-2-columnas, .grid-3-columnas{
+  grid-template-columns:1fr;
+}
 }
 `

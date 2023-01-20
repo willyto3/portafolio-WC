@@ -20,14 +20,22 @@ const Home = () => {
 export default Home
 
 const Wrapper = styled.section`
-  img{
-    width:40rem;
+  img {
+    width: 40rem;
   }
 
-  .box{
-    grid-template-columns:1fr 2fr;
-    align-items:center;
-    justify-items:center;
-    
+  .box {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+
+    @media (max-width: ${({ theme }) => theme.media.tablet}),
+      (max-width: ${({ theme }) => theme.media.movil}) {
+      grid-template-columns: 1fr;
+
+      img{
+        width: 30rem;
+      }
+    }
   }
 `

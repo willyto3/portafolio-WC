@@ -19,7 +19,5 @@ export const theme = {
     movil: '480px',
     smalltablet: '650px',
     tablet: '996px',
-    small: '1200px',
-    medium: '1440px',
   },
 }
