@@ -22,12 +22,12 @@ const Presentacion = () => {
         </div>
         <p>
           Soy una persona responsable, genero soluciones creativas a los
-          problemas, con iniciativa,honestidad y puntualidad, asumo con agrado
+          problemas, con iniciativa, honestidad y puntualidad, asumo con agrado
           los retos y metas que su organización pudiera plantear, facilidad para
           trabajar en equipo, autodidacta, disposición para aprender y me adapto
           rapidamente a los cambios.
         </p>
-        <button>Descargar CV</button>
+        <button className='boton'>Descargar CV</button>
       </div>
     </Wrapper>
   )
@@ -70,5 +70,31 @@ const Wrapper = styled.section`
     align-items: center;
     line-height: 5rem;
     font-size: 4rem;
+  }
+
+  .boton {
+    margin-top: 2rem;
+    width: 20rem;
+    height:6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2.4rem;
+      overflow: hidden;
+      background:url('flecha-hacia-abajo.png') no-repeat;
+      background-size:cover;
+      transition: width 200ms, margin-left 200ms;
+    }
+
+    &:is(:hover, :focus)::after {
+      width: 5rem;
+      height:5rem;
+      margin-left: 0.8rem;
+    }
   }
 `

@@ -89,7 +89,6 @@ const Wrapper = styled.div`
   }
 
   .nav-bar__link {
-    text-decoration: none;
     font-size: 2rem;
     text-transform: uppercase;
     color: black;

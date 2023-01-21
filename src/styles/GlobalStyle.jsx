@@ -36,6 +36,10 @@ p{
   text-align:justify;
 }
 
+a{
+  text-decoration: none;
+}
+
 .container {
   max-width: 170rem;
   width:90%;
