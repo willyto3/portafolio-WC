@@ -92,8 +92,8 @@ const Wrapper = styled.section`
     }
 
     &:is(:hover, :focus)::after {
-      width: 5rem;
-      height:5rem;
+      width: 3rem;
+      height:3rem;
       margin-left: 0.8rem;
     }
   }

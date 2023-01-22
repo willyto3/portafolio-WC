@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 // Importacion de Componentes
 import NavBar from './NavBar'
-import WhatsApp from './WhatsApp'
 
 const Header = () => {
   return (
@@ -13,7 +12,6 @@ const Header = () => {
         <img src='logo.png' alt='Logo' />
       </NavLink>
       <NavBar />
-      <WhatsApp />
     </Wrapper>
   )
 }
