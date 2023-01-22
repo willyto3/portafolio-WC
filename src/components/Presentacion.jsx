@@ -1,5 +1,6 @@
 // Importacion de Styled del Styled-Components
 import styled from 'styled-components'
+import Button from './Button'
 
 const Presentacion = () => {
   return (
@@ -20,14 +21,18 @@ const Presentacion = () => {
             <div className='inicio__profesion'>Experto en Excel - VBA</div>
           </div>
         </div>
-        <p>
-          Soy una persona responsable, genero soluciones creativas a los
-          problemas, con iniciativa, honestidad y puntualidad, asumo con agrado
-          los retos y metas que su organización pudiera plantear, facilidad para
-          trabajar en equipo, autodidacta, disposición para aprender y me adapto
-          rapidamente a los cambios.
-        </p>
-        <button className='boton'>Descargar CV</button>
+        <div>
+          <p>
+            Soy una persona responsable, genero soluciones creativas a los
+            problemas, con iniciativa, honestidad y puntualidad, asumo con
+            agrado los retos y metas que su organización pudiera plantear,
+            facilidad para trabajar en equipo, autodidacta, disposición para
+            aprender y me adapto rapidamente a los cambios.
+          </p>
+        </div>
+        <div className='boton'>
+          <Button />
+        </div>
       </div>
     </Wrapper>
   )
@@ -40,6 +45,10 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   margin: 1rem;
+
+  inicio {
+    margin-bottom: 2rem;
+  }
 
   .inicio__caja {
     height: 5rem;
@@ -73,28 +82,7 @@ const Wrapper = styled.section`
   }
 
   .boton {
-    margin-top: 2rem;
-    width: 20rem;
-    height:6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 2.4rem;
-      overflow: hidden;
-      background:url('flecha-hacia-abajo.png') no-repeat;
-      background-size:cover;
-      transition: width 200ms, margin-left 200ms;
-    }
-
-    &:is(:hover, :focus)::after {
-      width: 3rem;
-      height:3rem;
-      margin-left: 0.8rem;
-    }
+    margin-top:2rem;
+    height:10rem;
   }
 `
