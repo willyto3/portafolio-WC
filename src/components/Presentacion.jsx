@@ -31,7 +31,12 @@ const Presentacion = () => {
           </p>
         </div>
         <div className='boton'>
-          <Button />
+          <a
+            href='CV Ing. Quimico Willy Corzo.pdf'
+            download='CV Ing. Quimico Willy Corzo.pdf'
+          >
+            <Button />
+          </a>
         </div>
       </div>
     </Wrapper>
@@ -82,7 +87,7 @@ const Wrapper = styled.section`
   }
 
   .boton {
-    margin-top:2rem;
-    height:10rem;
+    margin-top: 2rem;
+    height: 10rem;
   }
 `
