@@ -8,7 +8,7 @@ const Home = () => {
     <Wrapper className='container'>
       <div className='box grid grid-2-columnas'>
         <div className='box__columna'>
-          <img src='WillyNegro.jpg' alt='Foto Perfil' />
+          <img src='WillyNegro.png' alt='Foto Perfil' />
         </div>
         <div className='box__columna'>
           <Presentacion />
