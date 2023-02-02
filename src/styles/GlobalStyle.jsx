@@ -21,6 +21,7 @@ h1{
   font-family: Merriweather, "Work Sans", sans-serif;
   font-size:8rem;
   font-style:italic;
+  text-align:center;
 }
 
 h2{
@@ -29,6 +30,13 @@ h2{
 
 h3{
   font-size:2.5rem;
+}
+
+h4{
+  font-size:1.5rem;
+}
+h4{
+  font-size:1rem;
 }
 
 p{

@@ -7,12 +7,6 @@ const Herramientas = () => {
       <h2>Herramientas</h2>
       <div className='grid'>
         <Card
-          titulo='Git Hub'
-          imagen='github.png'
-          parrafo='Es un servicio en la nube que ayuda a los desarrolladores a almacenar y administrar su código, al igual que llevar un registro y control de cualquier cambio sobre este código'
-          conocimiento='Intermedio'
-        />
-        <Card
           titulo='Excel'
           imagen='excel.png'
           parrafo='Es una hoja de cálculo que nos permite manipular datos numéricos y de texto en tablas formadas por la unión de filas y columnas.'
@@ -40,6 +34,12 @@ const Herramientas = () => {
           titulo='React'
           imagen='atom.png'
           parrafo='Es una librería open source de JavaScript para desarrollar interfaces de usuario'
+          conocimiento='Intermedio'
+        />
+        <Card
+          titulo='Git Hub'
+          imagen='github.png'
+          parrafo='Es un servicio en la nube que ayuda a los desarrolladores a almacenar y administrar su código, al igual que llevar un registro y control de cualquier cambio sobre este código'
           conocimiento='Intermedio'
         />
       </div>

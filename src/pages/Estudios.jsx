@@ -2,18 +2,24 @@
 import styled from 'styled-components'
 // Importacion de Componentes
 import Herramientas from '../components/Herramientas'
+import CardEstudio from '../components/CardEstudio'
 
 const Estudios = () => {
   return (
     <Wrapper className='container'>
-      <h1>Estudios</h1>
-      <div className='grid grid-2-columnas'>
-      <div className="estudio"></div>
-      <Herramientas />
+      <div className='grid grid-2-columnas columna-amplia'>
+        <div>
+          <h2>Mis Estudios</h2>
+          <CardEstudio />
+        </div>
+        <Herramientas />
       </div>
-      
     </Wrapper>
   )
 }
 export default Estudios
-const Wrapper = styled.section``
+const Wrapper = styled.section`
+
+.columna-amplia{
+  grid-template-columns: 75% 25%;
+}`

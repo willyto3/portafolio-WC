@@ -8,7 +8,7 @@ const Footer = () => {
         <div className='box-footer__footer'>
           <div className='box-footer__terms'>
             <p>
-              <h2>Willy Corzo</h2>
+              <h3>Willy Corzo</h3>
               Ingeniero Químico con 14 años de experiencia en Transferencia en
               Custodia, Medición y Analisis de Hidrocarburos. Orientado a
               resultados y a crear soluciones automatizadas.
@@ -66,12 +66,15 @@ const Wrapper = styled.footer`
   .box-footer__terms {
     max-width: 35rem;
     margin-top: 0.5rem;
+    & p {
+      font-size: 1.5rem;
+    }
   }
 
   .box-footer__icono {
-    width: 7rem;
+    width: 6rem;
     font-weight: 600;
-    pointer-events:auto;
+    pointer-events: auto;
   }
 
   .box-footer__copyright {
@@ -81,13 +84,14 @@ const Wrapper = styled.footer`
     padding: 0 1rem;
 
     & p {
-      margin-top: 2rem;
+      margin-top: 1rem;
       text-align: center;
+      font-size: 1.2rem;
     }
   }
 
   img {
-    width: 7rem;
+    width: 6rem;
   }
 
   .box-footer__iconos {

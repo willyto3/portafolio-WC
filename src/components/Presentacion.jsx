@@ -80,6 +80,10 @@ const Wrapper = styled.section`
     }
   }
 
+  .inicio__nombre{
+    text-align:left;
+  }
+
   .inicio__profesion {
     align-items: center;
     line-height: 5rem;
