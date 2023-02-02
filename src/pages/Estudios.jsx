@@ -1,13 +1,17 @@
 // Importacion de Styled del Styled-Components
 import styled from 'styled-components'
 // Importacion de Componentes
-import Habilidades from '../components/Habilidades'
+import Herramientas from '../components/Herramientas'
 
 const Estudios = () => {
   return (
     <Wrapper className='container'>
       <h1>Estudios</h1>
-      <Habilidades />
+      <div className='grid grid-2-columnas'>
+      <div className="estudio"></div>
+      <Herramientas />
+      </div>
+      
     </Wrapper>
   )
 }

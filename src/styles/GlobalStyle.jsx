@@ -28,7 +28,7 @@ h2{
 }
 
 h3{
-  font-size:3rem;
+  font-size:2.5rem;
 }
 
 p{
@@ -49,7 +49,7 @@ a{
 
 .grid{
   display:grid;
-  gap:1rem;
+  gap:2rem;
 }
 
 .grid-2-columnas{

@@ -1,7 +1,7 @@
 // Importamos Styled de styled-components
 import styled from 'styled-components'
 
-const Card = ({ titulo, imagen }) => {
+const Card = ({ titulo, imagen, parrafo, conocimiento }) => {
   return (
     <Caja>
       <div className='box'>
@@ -10,10 +10,9 @@ const Card = ({ titulo, imagen }) => {
         <div className='box__contenido'>
           <h2 className='box__titulo'>{titulo}</h2>
           <p className='box__parrafo'>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-            commodi laboriosam odio perspiciatis esse, ad corporis nesciunt
-            aliquam eum.
+            {parrafo}
           </p>
+          <h3 className='box__conocimiento'>{conocimiento}</h3>
         </div>
       </div>
     </Caja>
@@ -59,7 +58,6 @@ const Caja = styled.div`
   }
 
   .box:hover .box__circulo::before {
-    background: #0065c3;
     clip-path: circle(25rem at center);
   }
   .box__imagen {
@@ -73,8 +71,8 @@ const Caja = styled.div`
   }
 
   .box:hover .box__imagen {
-    left: 72%;
-    height: 19rem;
+    left: 75%;
+    height: 13rem;
   }
 
   .box__contenido {
@@ -82,7 +80,7 @@ const Caja = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 50%;
+    width: 55%;
     left: 20%;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     transition: 0.5s;
@@ -97,14 +95,17 @@ const Caja = styled.div`
   }
 
   .box__titulo {
-    color: white;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 5rem;
   }
 
   .box__parrafo {
-    color: white;
+    font-size: 1.5rem;
+  }
+
+  .box__conocimiento {
+    line-height: 4rem;
   }
 
   @media (max-width: 600px) {
@@ -119,7 +120,7 @@ const Caja = styled.div`
         .box__imagen {
           top: 70%;
           left: 50%;
-          height: 32rem;
+          height: 14rem;
         }
       }
     }

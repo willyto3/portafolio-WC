@@ -18,22 +18,14 @@ const Footer = () => {
         <div className='box-footer__footer grid'>
           <h3>Redes Sociales</h3>
           <div className='box-footer__iconos grid grid-3-columnas'>
-            <a href='#'>
-              <img
-                className='box-footer__icono'
-                src='whatsapp.png'
-                alt='Foto'
-              />
+            <a href='#' className='box-footer__icono'>
+              <img src='whatsapp.png' alt='Foto' />
             </a>
-            <a href='#'>
-              <img className='box-footer__icono' src='github.png' alt='Foto' />
+            <a href='#' className='box-footer__icono'>
+              <img src='github.png' alt='Foto' />
             </a>
-            <a href='#'>
-              <img
-                className='box-footer__icono'
-                src='linkedin.png'
-                alt='Foto'
-              />
+            <a href='#' className='box-footer__icono'>
+              <img src='linkedin.png' alt='Foto' />
             </a>
           </div>
         </div>
@@ -76,8 +68,10 @@ const Wrapper = styled.footer`
     margin-top: 0.5rem;
   }
 
-  .box-footer a {
+  .box-footer__icono {
+    width: 7rem;
     font-weight: 600;
+    pointer-events:auto;
   }
 
   .box-footer__copyright {
@@ -101,9 +95,5 @@ const Wrapper = styled.footer`
       (max-width: ${({ theme }) => theme.media.movil}) {
       grid-template-columns: repeat(3, 1fr);
     }
-  }
-
-  .box-footer__icono {
-    width: 6rem;
   }
 `
