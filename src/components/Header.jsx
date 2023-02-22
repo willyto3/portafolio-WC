@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <Wrapper>
       <NavLink to='/'>
-        <img src='logo.png' alt='Logo' />
+        <img src='vite.svg' alt='Logo' />
       </NavLink>
       <NavBar />
     </Wrapper>
@@ -25,7 +25,7 @@ const Wrapper = styled.nav`
   margin-top: 0.2rem;
 
   img {
-    height: 10rem;
+    height: 6rem;
   }
 
   button{

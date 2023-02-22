@@ -39,6 +39,13 @@ const Estudios = () => {
               fondo='uninorte.jpg'
               grado='Curso'
             />
+            <CardEstudio
+              institucion='Servicio Nacional de Aprendizaje - SENA'
+              fecha='Bogota - 2016'
+              estudio='Manejo de Herramientas : Microsoft Excel'
+              fondo='sena.png'
+              grado='Curso'
+            />
           </div>
         </div>
         <Herramientas />
