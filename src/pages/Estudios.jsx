@@ -10,7 +10,12 @@ const Estudios = () => {
       <div className='grid grid-2-columnas columna-amplia'>
         <div>
           <h2>Mis Estudios</h2>
-          <CardEstudio />
+          <div className='grid grid-2-columnas'>
+            <CardEstudio />
+            <CardEstudio />
+            <CardEstudio />
+            <CardEstudio />
+          </div>
         </div>
         <Herramientas />
       </div>
@@ -19,7 +24,7 @@ const Estudios = () => {
 }
 export default Estudios
 const Wrapper = styled.section`
-
-.columna-amplia{
-  grid-template-columns: 75% 25%;
-}`
+  .columna-amplia {
+    grid-template-columns: 70% 30%;
+  }
+`

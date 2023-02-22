@@ -10,7 +10,6 @@ const CardEstudio = () => {
           <div className='title-total'>
             <div className='title'>Universidad del Atlantico</div>
             <h2>Ingenieria Química</h2>
-
             <div className='desc'>
               Barranquilla - 2007
             </div>
@@ -23,17 +22,12 @@ const CardEstudio = () => {
 export default CardEstudio
 
 const Wrapper = styled.div`
-  border: 1rem solid blue;
-  height: 80dvh;
 
   .card {
     background: #fff;
-    border-radius: 4px;
-    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
-    max-width: 400px;
+    max-width: 50rem;
     display: flex;
     flex-direction: row;
-    border-radius: 25px;
     position: relative;
   }
   .card h2 {
@@ -45,11 +39,11 @@ const Wrapper = styled.div`
     text-align: right;
     color: green;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 2rem;
   }
   .card .desc {
     padding: 0.5rem 1rem;
-    font-size: 12px;
+    font-size: 1.5rem;
   }
 
   .card-text {
