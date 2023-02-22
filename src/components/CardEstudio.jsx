@@ -1,18 +1,19 @@
 import styled from 'styled-components'
 
-const CardEstudio = () => {
+const CardEstudio = ({ institucion, estudio, fecha, fondo, grado }) => {
   return (
     <Wrapper>
       <div className='card'>
-        <div className='card-text'>
-          <div className='portada'>
-          </div>
-          <div className='title-total'>
-            <div className='title'>Universidad del Atlantico</div>
-            <h2>Ingenieria Química</h2>
-            <div className='desc'>
-              Barranquilla - 2007
-            </div>
+        <div className='card__text'>
+          <div
+            className='card__portada'
+            style={{ backgroundImage: `url(${fondo})` }}
+          ></div>
+          <div className='card__title-total'>
+            <div className='card__institucion'>{institucion}</div>
+            <h2 className='card__estudio'>{estudio}</h2>
+            <h4 className='card__grado'>{grado}</h4>
+            <div className='card__fecha'>{fecha}</div>
           </div>
         </div>
       </div>
@@ -22,7 +23,6 @@ const CardEstudio = () => {
 export default CardEstudio
 
 const Wrapper = styled.div`
-
   .card {
     background: #fff;
     max-width: 50rem;
@@ -30,42 +30,43 @@ const Wrapper = styled.div`
     flex-direction: row;
     position: relative;
   }
-  .card h2 {
+  .card__estudio {
     margin: 0;
     padding: 0 1rem;
+    font-size: 2.5rem;
   }
-  .card .title {
+
+  .card__institucion {
     padding: 1rem;
     text-align: right;
     color: green;
     font-weight: bold;
     font-size: 2rem;
   }
-  .card .desc {
+  .card__fecha {
     padding: 0.5rem 1rem;
     font-size: 1.5rem;
   }
 
-  .card-text {
+  .card__text {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
-  .title-total {
+  .card__title-total {
     padding: 2.5em 1.5em 1.5em 1.5em;
   }
 
-  .img-portada {
-    width: 100%;
+  .card__grado {
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 2rem;
   }
 
-  .portada {
+  .card__portada {
     width: 100%;
     height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    background-image: url('ua.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
   }

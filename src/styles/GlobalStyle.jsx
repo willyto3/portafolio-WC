@@ -68,6 +68,10 @@ a{
   grid-template-columns:repeat(3, 1fr);
 }
 
+.centrado{
+  align-items:center;
+}
+
 @media (max-width: ${({ theme }) => theme.media.tablet}) {
 
   html {
