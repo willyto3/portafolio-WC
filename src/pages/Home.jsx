@@ -6,7 +6,7 @@ import Presentacion from '../components/Presentacion'
 const Home = () => {
   return (
     <Wrapper className='container'>
-      <div className='box grid grid-2-columnas'>
+      <div className='box grid'>
         <div className='box__columna'>
           <img src='WillyNegro.png' alt='Foto Perfil' />
         </div>
@@ -21,7 +21,7 @@ export default Home
 
 const Wrapper = styled.section`
   img {
-    width: 40rem;
+    width: 35rem;
   }
 
   .box {

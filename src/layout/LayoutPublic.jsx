@@ -8,7 +8,7 @@ const LayoutPublic = () => {
   const navigation = useNavigation()
 
   return (
-    <main>
+    <main className='app grid'>
       <Header />
       <main>
         {navigation.state === 'loading' && <h1>Cargando...</h1>}

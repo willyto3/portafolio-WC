@@ -97,7 +97,7 @@ const Wrapper = styled.div`
     display: inline-block;
     text-align: center;
     z-index: 1;
-    width: 16rem;
+    width: 15rem;
     font-weight: 500;
   }
 
@@ -115,27 +115,27 @@ const Wrapper = styled.div`
   .start-home,
   .nav-bar__link:nth-child(1):hover ~ .animation,
   .active:nth-child(1) ~ .animation {
-    width: 16rem;
+    width: 15rem;
     left: 0;
   }
 
   .nav-bar__link:nth-child(2):hover ~ .animation,
   .active:nth-child(2) ~ .animation {
-    left: 16rem;
+    left: 15rem;
   }
 
   .nav-bar__link:nth-child(3):hover ~ .animation,
   .active:nth-child(3) ~ .animation {
-    left: 32rem;
+    left: 30rem;
   }
 
   .nav-bar__link:nth-child(4):hover ~ .animation,
   .active:nth-child(4) ~ .animation {
-    left: 48rem;
+    left: 45rem;
   }
   .nav-bar__link:nth-child(5):hover ~ .animation,
   .active:nth-child(5) ~ .animation {
-    left: 64rem;
+    left: 60rem;
   }
 
   .movil-nav-bar {

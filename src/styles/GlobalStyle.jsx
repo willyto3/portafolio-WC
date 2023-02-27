@@ -72,23 +72,13 @@ a{
   align-items:center;
 }
 
-@media (max-width: ${({ theme }) => theme.media.tablet}) {
-
-  html {
-  font-size: 52%;
-}
-  .grid-2-columnas, .grid-3-columnas{
-    grid-template-columns:1fr;
-  }
-}
-
 @media (max-width: ${({ theme }) => theme.media.movil}) {
 
-html {
-font-size: 34%;
-}
-.grid-2-columnas, .grid-3-columnas{
-  grid-template-columns:1fr;
-}
+  html {
+    font-size: 45%;
+  }
+  .grid-2-columnas, .grid-3-columnas .columna-amplia{
+    grid-template-columns:1fr;
+  }
 }
 `
