@@ -23,11 +23,14 @@ const Presentacion = () => {
         </div>
         <div>
           <p>
-            Soy una persona responsable, genero soluciones creativas a los
-            problemas, con iniciativa, honestidad y puntualidad, asumo con
-            agrado los retos y metas que su organización pudiera plantear,
-            facilidad para trabajar en equipo, autodidacta, disposición para
-            aprender y me adapto rapidamente a los cambios.
+            Soy un Ingeniero Químico con una maestría en Gerencia de proyectos
+            con amplia experiencia en el sector de Hidrocarburos. Genero
+            soluciones creativas a los problemas; con iniciativa, honestidad y
+            puntualidad. Asumiendo con agrado los retos y metas que su
+            organización pudiera plantear. Facilidad para trabajar en equipo,
+            con buen manejo de relaciones interpersonales, autodidacta,
+            facilidad y disposición para aprender y para adaptarme a los
+            cambios.
           </p>
         </div>
         <div className='boton'>
