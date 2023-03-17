@@ -1,8 +1,8 @@
 // Importacion de Styled del Styled-Components
 import styled from 'styled-components'
 // Importacion de Componentes
-import Herramientas from '../components/Herramientas'
 import CardEstudio from '../components/CardEstudio'
+import Herramientas from '../components/Herramientas'
 
 const Estudios = () => {
   return (
@@ -46,6 +46,13 @@ const Estudios = () => {
               fondo='sena.png'
               grado='Curso'
             />
+            <CardEstudio
+              institucion='UDEMY'
+              fecha='Online - 2023'
+              estudio='FrontEnd Web Developer'
+              fondo='udemy.png'
+              grado='Curso'
+            />
           </div>
         </div>
         <Herramientas />
@@ -57,5 +64,9 @@ export default Estudios
 const Wrapper = styled.section`
   .columna-amplia {
     grid-template-columns: 70% 30%;
+
+    @media (max-width: ${({ theme }) => theme.media.movil}) {
+      grid-template-columns: 1fr;
+    }
   }
 `

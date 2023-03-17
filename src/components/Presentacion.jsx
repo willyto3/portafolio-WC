@@ -35,8 +35,8 @@ const Presentacion = () => {
         </div>
         <div className='boton'>
           <a
-            href='CV Ing. Quimico Willy Corzo.pdf'
-            download='CV Ing. Quimico Willy Corzo.pdf'
+            href='CV Ing Willy Corzo.pdf'
+            download='CV Ing Willy Corzo.pdf'
           >
             <Button />
           </a>
